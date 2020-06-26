@@ -1,7 +1,7 @@
 .header {
     height: 7rem;
-    background-color: $color-gray-light;
-    border-bottom: .1rem solid $color-blue-medium;
+    background-color: var(--color-gray-light);
+    border-bottom: .1rem solid var(--color-blue-medium);
 
     display: flex;
     justify-content: space-between;
@@ -10,7 +10,7 @@
 
 .logo {
     height: 5rem;
-    margin: 1rem 0 1rem 2rem;
+    margin: 1rem 0 1rem 5rem;
 }
 
 
@@ -23,38 +23,40 @@
     &__input {
         font-family: inherit;
         font-size: 1.3rem;
-        background-color: rgba($color-gray-medium, $alpha: 1.0);
+        background-color: var(--color-gray-medium);
         color: inherit;
         border: none;
         padding: .7rem 2rem;
         border-radius: 100px;
         width: 90%;
-        transition: all .3s;
+        transition: all .2s;
         margin-right: -3.5rem;
-        
-        &:focus{
+
+        &:focus {
             outline: none;
             width: 100%;
-            background-color: rgba($color-gray-dark, $alpha: .7);
+            background-color: var(--color-gray-dark);
         }
 
         &::-webkit-input-placeholder {
             font-weight: 100;
-            color: rgba($color-black, $alpha: .3);
+            color: var(--color-gray-dark-2);
         }
     }
 
-    
 
-    &__input:focus+.btn__search{
-            background-color: rgba($color-gray-dark, $alpha: .1);
+
+    &__input:focus+.btn__search {
+        background-color: transparent;
 
     }
 
     &__icon {
         height: 2rem;
         width: 2rem;
-        fill: rgba($color-black, $alpha: .25);
+        fill: var(--color-gray-dark-2);
+        background-color: transparent;
+
     }
 }
 
@@ -63,16 +65,16 @@
 
     display: flex;
     align-items: center;
-    margin-right: 2rem;
+    margin-right: 5rem;
 
-    &>*{
+    &>* {
         padding: 0 1rem;
         cursor: pointer;
         height: 100%;
     }
 
-    &>*:hover{
-        background-color: rgba($color-gray-dark, $alpha: .7);
+    &>*:hover {
+        background-color: var(--color-gray-dark);
     }
 
     &__icon-box {
@@ -82,7 +84,7 @@
     }
 
     &__icon {
-        
+
         &--img {
             height: 3.1rem;
             width: 3.1rem;
@@ -98,8 +100,8 @@
         right: 0rem;
         border-radius: 100px;
         padding: .1rem .1rem;
-        color:rgba($color-white, 1);
-        background-color: $color-salmon-dark;
+        color: var(--color-white);
+        background-color: var(--color-salmon-dark);
 
         display: flex;
         align-items: center;

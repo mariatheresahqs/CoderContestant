@@ -1,4 +1,6 @@
 .main-information{
-    background-color: $color-salmon-dark;
+    background-color: var(--color-gray-dark);
     flex: 1;
+
+    height: 80rem;
 }

@@ -16,26 +16,32 @@ Grey dark 3: #999
 
 */
 
-// COLORS
 
 
-    $color-green-light: #04BFBF;
-    $color-green-medium: #04ADBF;
-    $color-green-dark: rgb(21, 141, 156);
-    $color-blue-medium: rgb(17, 127, 179);
-    $color-blue-dark: #011C40;
-    $color-salmon-light:#F2A999;
-    $color-salmon-medium:#D94A70;
-    $color-salmon-dark:#FF3366;
-    $color-red: #D91604;
-    $color-gray-light:#faf9f9;
-    $color-gray-medium:#efefef;
-    $color-gray-dark:#ddd;
-    $color-black: rgb(0,0,0);
-    $color-white: #fff;
+:root {
 
+    // COLORS
 
+    --color-green-light: rgb(4, 191, 191);
+    --color-green-medium: rgb(4, 173, 191);
+    --color-green-dark: rgb(21, 141, 156);
+    --color-blue-medium: rgb(17, 127, 179);
+    --color-blue-dark: rgb(1, 124, 146);
+    --color-blue-dark-2: rgb(15, 76, 87);
+    --color-salmon-light: rgb(242, 169, 153);
+    --color-salmon-medium: rgb(217, 74, 112);
+    --color-salmon-dark: rgb(255, 51, 102);
+    --color-red: rgb(217, 22, 4);
+    --color-gray-light: rgb(250, 249, 249);
+    --color-gray-medium: rgb(239, 239, 239);
+    --color-gray-dark: rgb(230, 230, 230);
+    --color-gray-dark-2: rgb(170, 170, 170);
+    --color-gray-dark-3: rgb(2, 2, 20);
 
-// SHADOWS
+    --color-black: rgb(0, 0, 0);
+    --color-white: rgb(255, 255, 255);
 
-$shadow-box: 0rem 3rem 3rem rgba($color-blue-dark, 1);
+    // SHADOWS
+
+    --shadow-box: 0rem 2rem 8rem var(--color-gray-dark-3);
+}

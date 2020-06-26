@@ -2,7 +2,7 @@
     border: none;
 
     &__search {
-        background-color: rgba($color-gray-medium, $alpha: 1.0);
+        background-color: var(--color-gray-medium);
     }
 
     &:focus {
