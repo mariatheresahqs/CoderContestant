@@ -1,0 +1,113 @@
+.header {
+    height: 7rem;
+    background-color: $color-gray-light;
+    border-bottom: .1rem solid $color-blue-medium;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 5rem;
+    margin: 1rem 0 1rem 2rem;
+}
+
+
+.search {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__input {
+        font-family: inherit;
+        font-size: 1.3rem;
+        background-color: rgba($color-gray-medium, $alpha: 1.0);
+        color: inherit;
+        border: none;
+        padding: .7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        transition: all .3s;
+        margin-right: -3.5rem;
+        
+        &:focus{
+            outline: none;
+            width: 100%;
+            background-color: rgba($color-gray-dark, $alpha: .7);
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 100;
+            color: rgba($color-black, $alpha: .3);
+        }
+    }
+
+    
+
+    &__input:focus+.btn__search{
+            background-color: rgba($color-gray-dark, $alpha: .1);
+
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: rgba($color-black, $alpha: .25);
+    }
+}
+
+.user-nav {
+    align-self: stretch;
+
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+
+    &>*{
+        padding: 0 1rem;
+        cursor: pointer;
+        height: 100%;
+    }
+
+    &>*:hover{
+        background-color: rgba($color-gray-dark, $alpha: .7);
+    }
+
+    &__icon-box {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &__icon {
+        
+        &--img {
+            height: 3.1rem;
+            width: 3.1rem;
+        }
+    }
+
+    &__notification {
+        position: absolute;
+        font-size: 1rem;
+        height: 1.75rem;
+        width: 2.75rem;
+        top: 0.3rem;
+        right: 0rem;
+        border-radius: 100px;
+        padding: .1rem .1rem;
+        color:rgba($color-white, 1);
+        background-color: $color-salmon-dark;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__user {}
+
+    &__user-name {}
+
+}

@@ -1,0 +1,15 @@
+.btn {
+    border: none;
+
+    &__search {
+        background-color: rgba($color-gray-medium, $alpha: 1.0);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        transform: translateY(.2rem);
+    }
+}

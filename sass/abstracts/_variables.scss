@@ -1,0 +1,41 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+
+// COLORS
+
+
+    $color-green-light: #04BFBF;
+    $color-green-medium: #04ADBF;
+    $color-green-dark: rgb(21, 141, 156);
+    $color-blue-medium: rgb(17, 127, 179);
+    $color-blue-dark: #011C40;
+    $color-salmon-light:#F2A999;
+    $color-salmon-medium:#D94A70;
+    $color-salmon-dark:#FF3366;
+    $color-red: #D91604;
+    $color-gray-light:#faf9f9;
+    $color-gray-medium:#efefef;
+    $color-gray-dark:#ddd;
+    $color-black: rgb(0,0,0);
+    $color-white: #fff;
+
+
+
+// SHADOWS
+
+$shadow-box: 0rem 3rem 3rem rgba($color-blue-dark, 1);
