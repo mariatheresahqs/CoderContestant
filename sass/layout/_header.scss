@@ -1,7 +1,7 @@
 .header {
     height: 7rem;
     background-color: var(--color-gray-light);
-    border-bottom: .1rem solid var(--color-blue-medium);
+    border-bottom: .3rem solid var(--color-blue-medium);
 
     display: flex;
     justify-content: space-between;
@@ -106,10 +106,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
     }
-
-    &__user {}
-
-    &__user-name {}
 
 }

@@ -59,6 +59,14 @@ body {
   line-height: 1.6;
   min-height: 100vh; }
 
+.title__title {
+  margin: 1.6rem auto;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 0.1rem 0.1rem 0.1rem var(--color-white); }
+
 .btn {
   border: none; }
   .btn__search {
@@ -68,13 +76,44 @@ body {
   .btn:active {
     transform: translateY(0.2rem); }
 
+.btn-header {
+  color: var(--color-green-dark-2);
+  border: none;
+  font-size: inherit;
+  padding-bottom: .2rem;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .2s; }
+  .btn-header:hover {
+    color: var(--color-salmon-medium); }
+  .btn-header:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.15); }
+  100% {
+    transform: scale(1);
+    box-shadow: none; } }
+
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
+
 .content {
   display: flex; }
 
 .header {
   height: 7rem;
   background-color: var(--color-gray-light);
-  border-bottom: 0.1rem solid var(--color-blue-medium);
+  border-bottom: 0.3rem solid var(--color-blue-medium);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -150,20 +189,19 @@ body {
 .main-information {
   background-color: var(--color-gray-dark);
   flex: 1;
-  height: 80rem; }
+  min-height: 50rem; }
 
 .sidebar {
   background-color: var(--color-blue-dark);
   flex: 0 0 14%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between; }
 
 .side-nav {
   font-size: 1.2rem;
   list-style: none;
-  margin-top: 3rem; }
+  margin-top: .5rem; }
   .side-nav__item {
     position: relative; }
     .side-nav__item:not(:last-child) {
@@ -177,7 +215,7 @@ body {
     width: .5rem;
     background-color: var(--color-blue-dark-2);
     transform: scaleY(0);
-    transition: transform .2s, width .2s .2s, background-color .2s; }
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.2s; }
   .side-nav__item:hover::before {
     transform: scaleY(1);
     width: 100%; }

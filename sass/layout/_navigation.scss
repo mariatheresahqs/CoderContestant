@@ -3,14 +3,14 @@
     flex: 0 0 14%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     justify-content: space-between;
 }
 
 .side-nav {
     font-size: 1.2rem;
     list-style: none;
-    margin-top: 3rem;
+    margin-top: .5rem;
     // padding: 0 2rem;
 
     &__item {
@@ -31,7 +31,7 @@
         background-color: var(--color-blue-dark-2);
         transform: scaleY(0);
         transition: transform .2s,
-                    width .2s .2s,
+                    width .4s cubic-bezier(1, 0, 0, 1) .2s,
                     background-color .2s;
         
     }

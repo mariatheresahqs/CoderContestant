@@ -1,0 +1,10 @@
+.title {
+    &__title {
+        margin: 1.6rem auto;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 300;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-shadow: .1rem .1rem .1rem var(--color-white);
+    }
+}
