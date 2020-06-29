@@ -1,6 +1,25 @@
 .main-information{
-    background-color: var(--color-gray-dark);
+    background-color: var(--color-gray-medium);
     flex: 1;
     
-    min-height: 50rem;
+    min-height: 70rem;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+    background-color: var(--color-gray-medium);
+    // border-bottom: var(--line-bottom);
+}
+
+.description{
+    background-color: var(--color-gray-light);
+    font-size: 1.3rem;
+    text-align: justify;
+    hyphens: auto;
+    padding: 3rem;
+    box-shadow: -.1rem .1rem 1rem var(--color-gray-dark);
+    border-radius: .5rem;
+    width: 90%;
 }
