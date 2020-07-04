@@ -22,7 +22,7 @@ Grey dark 3: #999
 
     // COLORS
 
-    --color-green-light: rgb(4, 191, 191);
+    --color-green-light: rgb(28, 173, 173);
     --color-green-medium: rgb(4, 173, 191);
     --color-green-dark: rgb(21, 141, 156);
     --color-blue-medium: rgb(17, 127, 179);
@@ -44,9 +44,12 @@ Grey dark 3: #999
     // SHADOWS
 
     --shadow-box: 0rem 2rem 8rem var(--color-gray-dark-3);
+    --shadow-box-1: 0rem .1rem .2rem var(--color-gray-dark-2);
+    --shadow-box-2: 0rem 0rem .2rem var(--color-blue-dark-2);
 
     // BODER-BOTTOM
 
     --line-bottom: .1rem solid var(--color-blue-medium);
+    --line-bottom-1: .1rem solid var(--color-gray-dark);
     
 }

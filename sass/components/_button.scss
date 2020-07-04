@@ -1,5 +1,6 @@
 .btn {
     border: none;
+    border-radius: 10rem;
 
     &__search {
         background-color: var(--color-gray-medium);
@@ -14,8 +15,8 @@
     }
 }
 
-.btn-header {
-    color: var(--color-green-dark-2);
+.btn-inline {
+    color: var(--color-salmon-medium);
     border: none;
     font-size: inherit;
     padding-bottom: .2rem;
@@ -24,17 +25,38 @@
     cursor: pointer;
     transition: all .2s;
 
+
     &:hover {
 
         color: var(--color-salmon-medium);
+
+        span {
+            margin-left: 1.5rem;
+
+        }
     }
 
     &:focus {
         outline: none;
         animation: pulsate 1s infinite;
     }
-}
 
+    &-iniciante {
+        text-decoration: none;
+        border-bottom: .1rem solid currentColor;
+        padding-bottom: 0rem;
+        margin-top: 2rem;
+
+    }
+
+    & span {
+        margin-left: .3rem;
+        transition: all .2s;
+    }
+}
+.button{
+    text-align: center;
+}
 
 @keyframes pulsate {
     0% {
