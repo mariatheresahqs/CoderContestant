@@ -11,6 +11,12 @@
     justify-content: center;
     padding: 2.5rem;
     background-color: var(--color-gray-medium);
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 1.5rem 0;
+    }
+
+
 }
 
 .description {
@@ -20,6 +26,10 @@
     padding: 3rem;
     border-radius: 2rem;
     width: 90%;
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 1.5rem 0;
+    }
 }
 
 .languages {
@@ -30,6 +40,18 @@
     justify-content: center;
     align-items: stretch;
     margin-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+         padding: 1.5rem 2rem;
+    }
 }
 
 .language-review {
@@ -45,6 +67,16 @@
     position: relative;
     overflow: hidden;
     border-radius: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        margin: 0 .25rem;
+        margin-bottom: 3rem;
+    }
 
     &__text {
         font-size: 1.3rem;
@@ -92,7 +124,7 @@
         display: flex;
     }
 
-    &__link{
+    &__link {
         text-decoration: none;
     }
 
@@ -102,7 +134,7 @@
         padding-top: 1.2rem;
     }
 
-    &::before{
+    &::before {
         font-family: sans-serif;
         content: "\201C";
         position: absolute;
@@ -114,6 +146,6 @@
     }
 }
 
-.topics{
+.topics {
     width: 100%;
 }

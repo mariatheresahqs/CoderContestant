@@ -13,15 +13,26 @@
     margin-top: .5rem;
     // padding: 0 2rem;
 
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: .8rem;
+    }
+
     &__item {
         position: relative;
 
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-bottom: .5rem;
         }
+
     }
 
-    &__item::before{
+    &__item::before {
         content: "";
         position: absolute;
         top: 0;
@@ -31,11 +42,12 @@
         background-color: var(--color-blue-dark-2);
         transform: scaleY(0);
         transition: transform .2s,
-                    width .4s cubic-bezier(1, 0, 0, 1) .2s,
-                    background-color .2s;
-        
+            width .3s cubic-bezier(1, 0, 0, 1) .2s,
+            background-color .2s;
+
     }
-    &__item:hover::before{
+
+    &__item:hover::before {
         transform: scaleY(1);
         width: 100%;
 
@@ -58,6 +70,14 @@
         align-items: center;
         position: relative;
         z-index: 10;
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: 0rem .5rem;
+        }
     }
 
     &__icon {
@@ -65,6 +85,16 @@
         height: 2.2rem;
         fill: currentColor;
         margin-right: 2rem;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-right: 0rem;
+            margin-bottom: .5rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            width: 1.9rem;
+            height: 1.9rem;
+        }
     }
 }
 
@@ -75,4 +105,8 @@
     color: var(--color-white);
 
     align-self: flex-end;
+
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+    }
 }
