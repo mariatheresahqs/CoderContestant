@@ -15,6 +15,8 @@ Grey dark 2: #777
 Grey dark 3: #999
 
 */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 :root {
   --color-green-light: rgb(28, 173, 173);
   --color-green-medium: rgb(4, 173, 191);
@@ -58,7 +60,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--color-blue-dark);
-  font-family: 'Open-Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   line-height: 1.6;
   min-height: 100vh; }
@@ -69,32 +71,26 @@ body {
     padding: 1.2rem;
     text-align: center;
     font-size: 2.5rem;
-    font-weight: 300;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
     text-shadow: 0.1rem 0.1rem 0.1rem var(--color-white); }
+
+.subtitle {
+  color: var(--color-salmon-dark);
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center; }
+  .subtitle:not(:first-child) {
+    margin-top: 4rem; }
 
 .paragraph {
   margin: 2rem 2rem;
   text-indent: 2.5rem;
-  line-height: 2.5rem;
+  line-height: 2rem;
   letter-spacing: .1rem;
   padding: 0 5rem; }
-
-.green {
-  color: #25a55a; }
-  .green-dark {
-    color: #6a8327; }
-
-.blue {
-  color: #3184fa; }
-  .blue-dark {
-    color: #1d20d1; }
-
-.red {
-  color: #ac1b1b; }
-
-.yellow {
-  color: #c7ae24; }
 
 .btn {
   border: none;
@@ -106,17 +102,62 @@ body {
   .btn:active {
     transform: translateY(0.2rem); }
 
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .button-link {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+    background-color: var(--color-salmon-dark);
+    color: var(--color-white);
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden; }
+    .button-link:link {
+      text-decoration: none; }
+    .button-link > * {
+      display: inline-block;
+      transition: all .3s;
+      height: 100%;
+      width: 100%; }
+    .button-link__visible {
+      padding: 1rem 6rem; }
+    .button-link__invisible {
+      padding: 1rem 0rem;
+      position: absolute;
+      top: -100%;
+      left: 0; }
+    .button-link:hover .button-link__visible {
+      transform: translateY(100%); }
+    .button-link:hover .button-link__invisible {
+      top: 0; }
+    .button-link:focus {
+      outline: none;
+      animation: pulsate 1s infinite; }
+
+.btn-header {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .btn-header, .btn-header:active, .btn-header:focus {
+    text-decoration: none; }
+
 .btn-inline {
-  color: var(--color-salmon-medium);
+  color: var(--color-salmon-dark);
   border: none;
   font-size: inherit;
+  font-weight: 400;
   padding-bottom: .2rem;
   display: inline-block;
   background-color: transparent;
   cursor: pointer;
   transition: all .2s; }
   .btn-inline:hover {
-    color: var(--color-salmon-medium); }
+    color: var(--color-salmon-dark); }
     .btn-inline:hover span {
       margin-left: 1.5rem; }
   .btn-inline:focus {
@@ -154,7 +195,7 @@ body {
   list-style: none;
   margin: 3rem 7rem;
   padding: 1rem 6rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   letter-spacing: .1rem;
   margin-bottom: 1rem;
   border: var(--line-bottom-1); }
@@ -187,11 +228,20 @@ body {
   height: 5rem;
   margin: 1rem 0 1rem 2rem; }
 
+.title-header {
+  color: var(--color-blue-dark);
+  margin-left: 1rem;
+  font-family: monospace, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2rem;
+  font-weight: 100; }
+
 .search {
-  flex: 0 0 40%;
+  flex: 0 0 25%;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: .5rem; }
   .search__input {
     font-family: inherit;
     font-size: 1.3rem;
@@ -201,8 +251,8 @@ body {
     padding: .7rem 2rem;
     border-radius: 100px;
     width: 90%;
-    transition: all .2s;
-    margin-right: -3.5rem; }
+    transition: all .35s;
+    margin-right: -2.5rem; }
     .search__input:focus {
       outline: none;
       width: 100%;
@@ -330,13 +380,17 @@ body {
     font-size: 1.7rem;
     padding-top: 1.2rem; }
   .review::before {
+    font-family: sans-serif;
     content: "\201C";
     position: absolute;
-    top: -12rem;
+    top: -9rem;
     left: -1rem;
-    font-size: 25rem;
+    font-size: 20rem;
     color: var(--color-gray-medium);
     z-index: 1; }
+
+.topics {
+  width: 100%; }
 
 .sidebar {
   background-color: var(--color-blue-dark);
@@ -393,7 +447,7 @@ body {
 
 .container {
   max-width: 120rem;
-  margin: 2rem auto;
+  margin: 2rem auto 5rem auto;
   background-color: var(--color-gray-medium);
   box-shadow: var(--shadow-box);
   min-height: 70rem; }

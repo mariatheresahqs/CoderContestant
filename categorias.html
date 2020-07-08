@@ -14,11 +14,13 @@
 
 <body>
     <div class="container">
-        <header class="header">
-            <a href="index.html" target="_self" class="btn-inline">
-                <img src="img/hackathon01.svg" alt="Code Contestant logo" class="logo">
-            </a>
 
+
+        <header class="header">
+            <a href="index.html" target="_self" class="btn-header">
+                <img src="img/hackathon01.svg" alt="Code Contestant logo" class="logo">
+                <h1 class="title-header">Coder Contestant</h1>
+            </a>
             <form action="#" class="search">
                 <input type="text" class="search__input" placeholder="Buscar">
                 <button class="btn btn__search">
@@ -46,21 +48,23 @@
                 </div>
             </nav>
         </header>
+
+
         <div class="content">
             <nav class="sidebar">
                 <ul class="side-nav">
                     <li class="side-nav__item">
-                        <a href="iniciantes.html" target="_self" class="side-nav__link">
+                        <a href="problemas.html" target="_self" class="side-nav__link">
                             <svg class="side-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-address"></use>
-                            </svg> <span>Iniciantes</span>
+                            </svg> <span>Problemas</span>
                         </a>
                     </li>
                     <li class="side-nav__item">
-                        <a href="problemas.html" class="side-nav__link" target="_self">
+                        <a href="categorias.html" class="side-nav__link" target="_self">
                             <svg class="side-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-map"></use>
-                            </svg> <span>Problemas</span>
+                            </svg> <span>Categorias</span>
                         </a>
                     </li>
                     <li class="side-nav__item">
@@ -115,61 +119,25 @@
 
                 <div class="title">
                     <h1 class="title__title">
-                        Iniciantes
+                        Categorias
                     </h1>
                 </div>
 
                 <div class="details">
                     <div class="description">
                         <p class="paragraph">
-                            O primeiro passo para participar de maratonas e competições de programação é se familiarizar
-                            com
-                            a estrutura do enunciado de um problema. Eles se apresentam da seguinte forma:
+                            Os problemas apresentados nas competições são divididos em dez grandes categorias:
                         </p>
-                        <ul class="list">
-                            <li class="list__item">Título do Problema</li>
-                            <li class="list__item">História do Problema: contextualiza o problema, além de conter dicas
-                                de como abordar o mesmo</li>
-                            <li class="list__item">Restrições: fornece dicas quanto a complexidade do algoritmo ou o
-                                tipo de variável que se deve usar</li>
-                            <li class="list__item">Casos de Teste: apontam qual o tipo de entrada e saída que o
-                                algoritmo deve trabalhar</li>
-                        </ul>
-                        <p class="paragraph">
-                            Outro ponto importante é entender as respostas que são retornadas ao se submeter a solução
-                            de um
-                            problema. As respostas podem ser:
-                        </p>
-                        <ul class="list">
-                            <li class="list__item"><span class="green">Accepted (AC):</span> a solução apresentada
-                                passou em
-                                todos os casos de teste</li>
-                            <li class="list__item"><span class="red">Wrong Answer (WA):</span> a saída esperada está
-                                errada e não passou nos casos de teste, ou, como em alguns sites de treino, possui
-                                problema na
-                                formatação</li>
-                            <li class="list__item"><span class="blue-dark">Time Limit Exceed (TLE):</span> a solução
-                                apresentada ultrapassa o limite de
-                                tempo permitido
-                            </li>
-                            <li class="list__item"><span class="blue">Runtime Error (RTE):</span> o programa travou em
-                                alguma parte da execução, normalmente por se usar uma variável com menor capacidade que
-                                a necessária ou por tentativa de acesso de memória inválida
-                            </li>
-                            <li class="list__item"><span class="yellow">Compilation Error:</span> o código-fonte foi
-                                submetido com erro de compilação. </li>
-                            <li class="list__item"><span class="green-dark">Presentation Error:</span> alguns judges
-                                apresentam essa categoria, que
-                                trata-se
-                                do resultado da saída formatado de modo diferente do esperado, como excesso ou falta de
-                                espaço e quebra de linha</li>
-                        </ul>
+                        <img src="img/topicosProblemas.png" alt="Tópicos de problemas de competiçao competitiva"
+                            class="topics">
 
                         <div class="button">
-                            <a href="https://www.urionlinejudge.com.br/judge/pt/problems/index/1"
-                                target="__blank" class="btn-inline btn-inline-iniciante">Começar<span>&rarr;</span></a>
+                            <a href="https://github.com/matthewsamuel95/ACM-ICPC-Algorithms" class="button-link">
+                                <span class="button-link__visible">Algoritmos</span>
+                                <span class="button-link__invisible">E Estrutura de Dados</span>
+                            </a>
+                        </div>
                     </div>
-                            </div>
                 </div>
             </main>
         </div>
